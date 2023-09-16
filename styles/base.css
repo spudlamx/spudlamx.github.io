@@ -34,8 +34,8 @@ h3{
 
 body{
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
-    grid-template-rows: auto, auto, 1fr, auto;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto auto 1fr auto;
     font-family: "Cormorant Garamond", serif;
 }
 header{
