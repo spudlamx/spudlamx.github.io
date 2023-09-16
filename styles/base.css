@@ -39,7 +39,7 @@ body{
     font-family: "Cormorant Garamond", serif;
 }
 header{
-    background: rgb(103, 132, 160);
+    background: rgb(47, 90, 131);
     color: rgb(255, 255, 255);
     display: grid;
     grid-template: auto/ 2fr 1fr 2fr 2fr;
