@@ -24,6 +24,8 @@ a:active {
     text-decoration: underline;
 }
 
+
+
 h3{
     background-color: rgb(0, 83, 128);
     color: white;
@@ -40,9 +42,16 @@ header{
     background: rgb(103, 132, 160);
     color: rgb(255, 255, 255);
     display: grid;
-    grid-template: auto/ 1fr auto 1fr;
+    grid-template: auto/ 2fr 1fr 2fr 2fr;
     padding: 2rem;
     grid-column: 1/4;
+}
+#headerimg{
+    grid-column: 2/3;
+}
+#headtext{
+    grid-column: 3/4;
+    text-align: left;
 }
 nav{
     background: rgb(209, 233, 255);
