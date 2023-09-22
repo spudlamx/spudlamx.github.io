@@ -1,8 +1,9 @@
 @media (min-width: 768px) {
     nav {
-      flex-direction: row;
-      justify-content: space-between;
-    }
+        flex-direction: row; /* For larger views, display in a row */
+        justify-content: space-between;
+        align-items: center;
+      }
   
     main {
       grid-column: 1/4; /* Span the middle column for main in larger views */
