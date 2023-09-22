@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+    nav {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    main {
+      grid-column: 1/4; /* Span the middle column for main in larger views */
+      display: flex;
+      justify-content: space-between; /* Arrange sections side by side */
+    }
+  
+    section {
+      width: 48%; /* Adjust the width to fit two sections in a row */
+      display: inline-block; /* Display sections inline */
+      box-sizing: border-box; /* Ensure padding is included in the width */
+      padding: 1rem; /* Add consistent padding */
+      margin-bottom: 0.5rem; /* Add margin for spacing between sections */
+      vertical-align: top; /* Ensure content aligns at the top */
+    }
+  }
