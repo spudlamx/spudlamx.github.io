@@ -1,10 +1,10 @@
 @media (min-width: 768px) {
-    nav {
-        flex-direction: row; /* For larger views, display in a row */
+    /* nav {
+        flex-direction: row; 
         justify-content: space-between;
         align-items: center;
       }
-  
+   */
     main {
       grid-column: 1/4; /* Span the middle column for main in larger views */
       display: flex;
@@ -18,5 +18,25 @@
       padding: 1rem; /* Add consistent padding */
       margin-bottom: 0.5rem; /* Add margin for spacing between sections */
       vertical-align: top; /* Ensure content aligns at the top */
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end; /* Adjust the alignment of the menu items */
+      padding: 1rem;
+    }
+  
+    .navigation {
+      display: flex;
+      flex-direction:row;
+      align-items: center; /* Align items vertically in larger view */
+    }
+  
+    .navigation a {
+      padding: 0 15px; /* Adjust spacing between menu items */
+    }
+
+    #menu {
+      display: none; /* Hide the menu button on larger screens */
     }
   }

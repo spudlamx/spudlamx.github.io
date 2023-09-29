@@ -88,3 +88,31 @@ footer {
   grid-column: 1/4;
 }
 
+#menu {
+  font-size: 1.5rem;
+  border: 1px solid rgba(0,0,0,.3);
+  padding: 3px 7px 6px;
+  background-color: #eee;
+  color: #000;
+}
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "❌"; 
+}
+
+.navigation {
+  display: none;
+  flex-direction: column; /* Initially hide the menu */
+  align-items: center; /* Align the menu items to the right */
+}
+
+.navigation.open {
+  display: flex; /* Show the menu when the open class is applied */
+}
+.navigation.open #menu::after {
+  content: "✕";
+  margin-left: 0.5em; /* Adjusted for proper alignment */
+}
