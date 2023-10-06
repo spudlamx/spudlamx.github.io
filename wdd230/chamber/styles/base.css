@@ -6,16 +6,20 @@ body {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
 }
+img{
+  max-width: 100%;
+  height: auto;
+}
 header {
-  background: rgb(47, 90, 131);
+  text-align: center;
+  background: #00539C;
   color: rgb(255, 255, 255);
-  display: grid;
-  grid-template: auto / 2fr 1fr 2fr 2fr;
   padding: 2rem;
   grid-column: 1/4;
 }
 nav {
-    background: rgb(209, 233, 255);
+    background: #515151;
+    color: white;
     display: flex;
     flex-direction:column;
     justify-content: space-around;
@@ -25,9 +29,15 @@ nav {
   }
 main {
   grid-column: 2/3;
+  color: #515151;
+  padding: 1rem;
+}
+section{
+  border: 1px solid #000;
+  padding: 1rem;
 }
 footer {
-  background: rgb(0, 83, 128);
+  background: #00539C;
   padding: 1rem;
   text-align: center;
   color: white;
