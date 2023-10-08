@@ -1,15 +1,21 @@
+/* Global styles */
 * {
   box-sizing: border-box;
 }
 
+/* Layout styles */
 body {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
 }
-img{
+
+/* Image styles */
+img {
   max-width: 100%;
   height: auto;
 }
+
+/* Header styles */
 header {
   text-align: center;
   background: #00539C;
@@ -17,44 +23,54 @@ header {
   padding: 2rem;
   grid-column: 1/4;
 }
+
+/* Navigation styles */
 nav {
-    background: #515151;
-    color: white;
-    display: flex;
-    flex-direction:column;
-    justify-content: space-around;
-    align-items: center;
-    grid-column: 1/4;
-  }
+  background: #515151;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  grid-column: 1/4;
+}
+
+/* Main content styles */
 main {
   grid-column: 2/3;
   color: #515151;
   padding: 1rem;
 }
-section{
+
+/* Section styles */
+section {
   text-align: center;
   border: 1px solid #000;
   background-color: #515151;
   color: white;
   margin: 1rem;
 }
-.ads{
+
+/* Ads styles */
+.ads {
   display: grid;
   grid-template-rows: auto auto;
 }
-.ads h2{
+.ads h2 {
   grid-column: 1/4;
 }
-.ads section{
+.ads section {
   grid-row: 2/3;
   background-color: white;
-  color:#00539C; 
+  color: #00539C;
 }
-.ads section h3{
+.ads section h3 {
   text-align: center;
   color: white;
   background-color: #00539C;
 }
+
+/* Footer styles */
 footer {
   background: #00539C;
   padding: 1rem;
@@ -62,9 +78,11 @@ footer {
   color: white;
   grid-column: 1/4;
 }
+
+/* Menu button styles */
 #menu {
   font-size: 1.5rem;
-  border: 1px solid rgba(0,0,0,.3);
+  border: 1px solid rgba(0, 0, 0, .3);
   padding: 3px 7px 6px;
   background-color: #eee;
   color: #000;
@@ -72,50 +90,47 @@ footer {
 #menu::before {
   content: "☰";
 }
-
 #menu.open::before {
   content: "❌"; 
 }
 
+/* Navigation styles */
 .navigation {
   display: none;
-  flex-direction: column; /* Initially hide the menu */
-  align-items: center; /* Align the menu items to the right */
+  flex-direction: column;
+  align-items: center;
 }
 .navigation a {
   padding: 0 15px;
-  color: white; /* Added to ensure links are visible */
-  text-decoration: none; /* Added to remove underline */
+  color: white;
+  text-decoration: none;
 }
 
-
+/* Navigation styles when open */
 .navigation.open {
-  display: flex; /* Show the menu when the open class is applied */
+  display: flex;
 }
 .navigation.open #menu::after {
   content: "✕";
-  margin-left: 0.5em; /* Adjusted for proper alignment */
+  margin-left: 0.5em;
 }
 
+/* List and link styles */
 ul {
   list-style: none;
   padding: 1%;
 }
-
 a:link {
   text-decoration: none;
 }
-
 a:visited {
   text-decoration: none;
   color: rgb(255, 244, 163);
 }
-
 a:hover {
   background: white;
   color: #00539C;
 }
-
 a:active {
   text-decoration: underline;
 }
