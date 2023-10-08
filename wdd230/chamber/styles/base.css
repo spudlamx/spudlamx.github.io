@@ -63,3 +63,59 @@ footer {
   color: white;
   grid-column: 1/4;
 }
+#menu {
+  font-size: 1.5rem;
+  border: 1px solid rgba(0,0,0,.3);
+  padding: 3px 7px 6px;
+  background-color: #eee;
+  color: #000;
+}
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "❌"; 
+}
+
+.navigation {
+  display: none;
+  flex-direction: column; /* Initially hide the menu */
+  align-items: center; /* Align the menu items to the right */
+}
+.navigation a {
+  padding: 0 15px;
+  color: white; /* Added to ensure links are visible */
+  text-decoration: none; /* Added to remove underline */
+}
+
+
+.navigation.open {
+  display: flex; /* Show the menu when the open class is applied */
+}
+.navigation.open #menu::after {
+  content: "✕";
+  margin-left: 0.5em; /* Adjusted for proper alignment */
+}
+
+ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(97, 59, 144);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}

@@ -1,42 +1,26 @@
 @media (min-width: 768px) {
-    /* nav {
-        flex-direction: row; 
-        justify-content: space-between;
-        align-items: center;
-      }
-   */
-    main {
-      grid-column: 1/4; /* Span the middle column for main in larger views */
-      display: flex;
-      justify-content: space-between; /* Arrange sections side by side */
-    }
-  
-    section {
-      width: 48%; /* Adjust the width to fit two sections in a row */
-      display: inline-block; /* Display sections inline */
-      box-sizing: border-box; /* Ensure padding is included in the width */
-      padding: 1rem; /* Add consistent padding */
-      margin-bottom: 0.5rem; /* Add margin for spacing between sections */
-      vertical-align: top; /* Ensure content aligns at the top */
-    }
-
-    nav {
-      display: flex;
-      justify-content: flex-end; /* Adjust the alignment of the menu items */
-      padding: 1rem;
-    }
-  
-    .navigation {
-      display: flex;
-      flex-direction:row;
-      align-items: center; /* Align items vertically in larger view */
-    }
-  
-    .navigation a {
-      padding: 0 15px; /* Adjust spacing between menu items */
-    }
-
-    #menu {
-      display: none; /* Hide the menu button on larger screens */
-    }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
   }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation li {
+    list-style: none; /* Remove default list style */
+    margin: 0 10px; /* Adjust spacing between menu items */
+  }
+
+  .navigation a {
+    color: white; /* Adjust the color to make links visible */
+    text-decoration: none; /* Remove underline */
+  }
+
+  #menu {
+    display: none;
+  }
+}
