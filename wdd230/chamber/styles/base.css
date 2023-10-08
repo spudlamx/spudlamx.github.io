@@ -33,8 +33,28 @@ main {
   padding: 1rem;
 }
 section{
+  text-align: center;
   border: 1px solid #000;
-  padding: 1rem;
+  background-color: #515151;
+  color: white;
+  margin: 1rem;
+}
+.ads{
+  display: grid;
+  grid-template-rows: auto auto;
+}
+.ads h2{
+  grid-column: 1/4;
+}
+.ads section{
+  grid-row: 2/3;
+  background-color: white;
+  color:#00539C; 
+}
+.ads section h3{
+  text-align: center;
+  color: white;
+  background-color: #00539C;
 }
 footer {
   background: #00539C;
