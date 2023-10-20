@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta property="og:title" content="wdd 230 assignments" />
-    <meta property="og:type" content="Website" />
-    <meta property="og:url" content="https://spudlamx.github.io/wdd230/" />
-    <meta property="og:image" content="images/rigby.webp" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="wdd 230 assignments" >
+    <meta property="og:type" content="Website" >
+    <meta property="og:url" content="https://spudlamx.github.io/wdd230/" >
+    <meta property="og:image" content="images/rigby.webp" >
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Spencer Lamoreaux - WDD 230 - Web Frontend Development</title>
-    <meta name="author" content="Spencer Lamoreaux" />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/larger.css" />
-    <link rel="stylesheet" href="styles/normalize.css" />
+    <meta name="author" content="Spencer Lamoreaux" >
+    <link rel="stylesheet" href="styles/base.css" >
+    <link rel="stylesheet" href="styles/larger.css" >
+    <link rel="stylesheet" href="styles/normalize.css" >
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Outfit"
-    />
-    <link rel="icon" href="images/favicon.ico" />
+    >
+    <link rel="icon" href="images/favicon.ico" >
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Cormorant Garamond"
-    />
+    >
     <meta
       name="description"
       content="This web page is designed for Spencer Lamoreaux to access the 
       course assignment portal for WDD 230 - Web Frontend Development"
-    />
+    >
   </head>
   <body>
     <header>
-      <img
-        src="images/faceshot.webp"
-        height="150"
-        alt="author photo"
-        id="headerimg"
-      />
+      <picture>
+        <!-- WebP image for the header (adjust the path as needed) -->
+        <source id="headerimg" srcset="images/faceshot.webp" type="image/webp">
+        <!-- Fallback image in another format (e.g., JPEG) for browsers that don't support WebP -->
+        <img src="images/faceshot.jpg" height="150" alt="author photo" id="headerimg">
+      </picture>
       <h1 id="headtext">Spencer Lamoreaux</h1>
     </header>
+    
     <nav>
       <button id="menu"></button>
       <ul class="navigation">
@@ -55,17 +56,17 @@
       </ul>
     </nav>
     <main>
-      <picture class="hero">
-        <!-- WebP image for mobile view (up to 400px) -->
+      <div class="hero">
+        <picture>
         <source media="(max-width: 768px)" srcset="images/mobiletemple.webp" type="image/webp">
-        <!-- WebP image for larger views (up to 960px in landscape orientation) -->
         <source media="(min-width: 768px) and (max-width: 960px) and (orientation: landscape)" srcset="images/iftemple.webp" type="image/webp">
-        <!-- Fallback image for browsers that do not support WebP or for other cases -->
         <img src="images/iftemple.png" alt="Idaho Falls Temple">
-        <div class="overlay">
-          <h2>Idaho Falls Temple</h2>
-        </div>
-      </picture>         
+      </picture>     
+      <div class="overlay">
+        <h2>Idaho Falls Temple</h2>
+      </div>
+    </div>
+         
       <h2>WDD 230: Web Frontend Development</h2>
       <section class="card">
         <h3>Learning Activities</h3>
@@ -125,8 +126,8 @@
     
     <footer>
       <p>
-        &copy; <span id="currentyear"></span><br />
-        Spencer Lamoreaux <br />
+        &copy; <span id="currentyear"></span><br >
+        Spencer Lamoreaux <br >
         United States of America
       </p>
       <p id="lastModified"></p>

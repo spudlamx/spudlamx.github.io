@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
 }
-
+img{
+  max-width: 100%;
+}
 ul {
   list-style: none;
   padding: 1rem;
@@ -68,7 +70,7 @@ header {
   grid-column: 1/4;
 }
 
-#headerimg {
+header picture{
   grid-column: 2/3;
 }
 
