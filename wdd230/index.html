@@ -4,7 +4,7 @@
     <meta property="og:title" content="wdd 230 assignments" />
     <meta property="og:type" content="Website" />
     <meta property="og:url" content="https://spudlamx.github.io/wdd230/" />
-    <meta property="og:image" content="images/rigby.jpeg" />
+    <meta property="og:image" content="images/rigby.webp" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,7 +31,7 @@
   <body>
     <header>
       <img
-        src="images/faceshot.jpg"
+        src="images/faceshot.webp"
         height="150"
         alt="author photo"
         id="headerimg"
@@ -55,6 +55,17 @@
       </ul>
     </nav>
     <main>
+      <picture class="hero">
+        <!-- WebP image for mobile view (up to 400px) -->
+        <source media="(max-width: 768px)" srcset="images/mobiletemple.webp" type="image/webp">
+        <!-- WebP image for larger views (up to 960px in landscape orientation) -->
+        <source media="(min-width: 768px) and (max-width: 960px) and (orientation: landscape)" srcset="images/iftemple.webp" type="image/webp">
+        <!-- Fallback image for browsers that do not support WebP or for other cases -->
+        <img src="images/iftemple.png" alt="Idaho Falls Temple">
+        <div class="overlay">
+          <h2>Idaho Falls Temple</h2>
+        </div>
+      </picture>         
       <h2>WDD 230: Web Frontend Development</h2>
       <section class="card">
         <h3>Learning Activities</h3>
@@ -73,7 +84,7 @@
             <a href="lesson2/design-principles.html">Design Document</a>
           </li>
           <li>
-            03: <a href="images/combinatorquiz.png"> Combinator Quiz</a> |
+            03: <a href="images/combinatorquiz.webp"> Combinator Quiz</a> |
             <a href="https://codepen.io/Spencer-Lamoreaux/pen/YzdvLMg">
               CodePen</a
             >

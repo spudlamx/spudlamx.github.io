@@ -10,7 +10,12 @@
       display: flex;
       justify-content: space-between; /* Arrange sections side by side */
     }
-  
+    .overlay {
+      position: absolute;
+      top: 10px;
+      left: 30px;
+      width: 40%;
+    }
     section {
       width: 48%; /* Adjust the width to fit two sections in a row */
       display: inline-block; /* Display sections inline */

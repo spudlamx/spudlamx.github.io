@@ -23,6 +23,28 @@ a:hover {
 a:active {
   text-decoration: underline;
 }
+.hero {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.overlay h2 {
+  margin: 0;
+}
 
 h3 {
   background-color: rgb(0, 83, 128);
