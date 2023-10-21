@@ -120,6 +120,25 @@ main {
 .overlay p::before {
   content: "Small";
 }
+
+.hero {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 24px;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
 /* Section styles */
 section {
   text-align: center;
