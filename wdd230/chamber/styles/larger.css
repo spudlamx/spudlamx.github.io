@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
     nav {
       display: flex;
       justify-content: flex-end;
@@ -9,6 +9,9 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+    }
+    .overlay p::before {
+      content: "Large";
     }
     .ads {
       display: grid;

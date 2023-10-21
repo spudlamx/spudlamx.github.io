@@ -30,6 +30,9 @@ header h1,
 header h3{
   grid-column: 2/3;
 }
+header picture{
+  max-width: 150px;
+}
 
 /* The switch - the box around the slider */
 .switch {
@@ -114,7 +117,9 @@ main {
   color: #404040;
   padding: 1rem;
 }
-
+.overlay p::before {
+  content: "Small";
+}
 /* Section styles */
 section {
   text-align: center;
