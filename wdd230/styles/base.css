@@ -105,10 +105,10 @@ section {
   }
 
   .visits {
-    color: navy;
-    font-weight: bolder;
-    font-size: larger;
-  }
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
 
 footer {
   background: rgb(0, 83, 128);
@@ -145,4 +145,10 @@ footer {
 .navigation.open #menu::after {
   content: "✕";
   margin-left: 0.5em; /* Adjusted for proper alignment */
+}
+
+iframe{
+  width:600;
+  height:450;
+  border: 0;
 }
