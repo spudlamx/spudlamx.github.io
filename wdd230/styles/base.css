@@ -104,6 +104,12 @@ section {
     box-sizing: border-box; /* Ensure padding is included in the width */
   }
 
+  .visits {
+    color: navy;
+    font-weight: bolder;
+    font-size: larger;
+  }
+
 footer {
   background: rgb(0, 83, 128);
   padding: 1rem;
