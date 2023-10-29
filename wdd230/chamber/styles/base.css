@@ -226,7 +226,7 @@ ul {
 a:link {
   text-decoration: none;
 }
-a:visited {
+.navigation a:visited {
   text-decoration: none;
   color: rgb(255, 244, 163);
 }
@@ -236,4 +236,42 @@ a:hover {
 }
 a:active {
   text-decoration: underline;
+}
+
+#sidebar div{
+  text-align: center;
+  color: #00539C;
+  background-color: white;
+}
+#sidebar div h3{
+  text-align: center;
+  background-color: #00539C;
+  color: white;
+}
+#mainpics{
+  border: 1px solid #000;
+  text-align: center;
+}
+.image-container {
+  position: relative;
+  max-width: 100%; 
+  margin: 25px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.image-container h2 {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Background color for the label */
+  color: #fff; /* Text color for the label */
+  padding: 10px; /* Adjust this as needed for padding around the text */
+  margin: 0;
+  width: 100%;
+  text-align: center; /* Center the text horizontally */
 }

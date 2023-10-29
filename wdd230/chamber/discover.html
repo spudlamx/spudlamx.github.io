@@ -1,12 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    discover page
-</body>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="I.F. Chamber OF Commerce" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:image" content="images/idaho-falls.webp" />
+    <meta
+      property="og:url"
+      content="https://spudlamx.github.io/wdd230/chamber/"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idaho Falls Chamber of Commerce</title>
+    <meta name="author" content="Spencer Lamoreaux" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Outfit"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Cormorant Garamond"
+    />
+    <meta
+      name="description"
+      content="Details about Idaho Falls Chamber of Commerce"
+    />
+  </head>
+  <body>
+    <header>
+      <picture>
+        <source srcset="images/iflogo.jpeg" type="image/webp" />
+        <img src="images/iflogo.jpeg" alt="logo" />
+      </picture>
+      <h1>
+        Idaho Falls <br />
+        Chamber of Commerce
+      </h1>
+      <h3 id="headtext">Spencer Lamoreaux</h3>
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+    </header>
+    <nav>
+      <button id="menu"></button>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+    <main id="discmain">
+      <section id="sidebar">
+        <div>
+          <h3>Last Visit</h3>
+          <p><span id="days"></span></p>
+        </div>
+        <div>
+          <h3>Upcoming Events</h3>
+          <ul>
+            <li>Event 1 - Date</li>
+            <li>Event 2 - Date</li>
+            <li>Event 3 - Date</li>
+            <!-- Add more events as needed -->
+          </ul>
+        </div>
+        <div>
+          <h3>Attractions</h3>
+          <p>Explore our city's top attractions and landmarks.</p>
+          <ul>
+            <li><a href="https://www.idahofallsidaho.gov/1736/Zoo" target="_blank">Idaho Falls Zoo</a></li>
+            <li><a href="https://www.idahofallsfarmersmarket.org/" target="_blank">Farmers Market</a></li>
+            <li><a href="https://www.idahofallsidaho.gov/1248/Japanese-Friendship-Garden" target="_blank">Friendship Gardens</a></li>
+            <li><a href="https://www.snakeriverlanding.com/" target="_blank">Snake River Landing</a></li>
+            <li><a href="https://www.idahofallsidaho.gov/Facilities/Facility/Details/Tautphaus-Park-48" target="_blank">Tautphaus Park</a></li>
+            <li><a href="https://www.idahofallsidaho.gov/Facilities/Facility/Details/River-Walk-69" target="_blank">Greenbelt</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="mainpics">
+        <h1>Discover Idaho Falls</h1>
+        <div class="image-container">
+          <picture>
+            <source srcset="images/farmMark.webp" type="image/webp" />
+            <img src="images/farmMark.webp" alt="Farmers Market" loading="lazy" />
+          </picture>
+          <h2>I.F. Farmers Market</h2>
+        </div>
+        <div class="image-container">
+          <picture>
+            <source srcset="images/garden.webp" type="image/webp" />
+            <img src="images/garden.webp" alt="Friendship Garden" loading="lazy" />
+          </picture>
+          <h2>Friendship Gardens</h2>
+        </div>
+        <div class="image-container">
+          <picture>
+            <source srcset="images/srlanding.webp" type="image/webp" />
+            <img src="images/srlanding.webp" alt="Snake River Landing" loading="lazy" />
+          </picture>
+          <h2>Snake River Landing</h2>
+        </div>
+        <div class "image-container">
+          <picture>
+            <source srcset="images/park.webp" type="image/webp" />
+            <img src="images/park.webp" alt="Tautphaus Park" loading="lazy" />
+          </picture>
+          <h2>Tautphaus Park</h2>
+        </div>
+        <div class="image-container">
+          <picture>
+            <source srcset="images/greenbelt.webp" type="image/webp" />
+            <img src="images/greenbelt.webp" alt="Greenbelt" loading="lazy" />
+          </picture>
+          <h2>Idaho Falls Greenbelt</h2>
+        </div>
+        <div class="image-container">
+          <picture>
+            <source srcset="images/zoo.webp" type="image/webp" />
+            <img src="images/zoo.webp" alt="Idaho Falls Zoo" loading="lazy" />
+          </picture>
+          <h2>Idaho Falls Zoo</h2>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span><br />
+        Spencer Lamoreaux <br />
+        (208) 521-3988 <br />
+        United States of America
+      </p>
+      <p>
+        This webpage is a project for Brigham Young University-Idaho course WDD
+        230
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/days.js"></script>
+  </body>
 </html>

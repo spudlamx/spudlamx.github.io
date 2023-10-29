@@ -27,5 +27,12 @@
     #menu {
       display: none;
     }
+
+    #discmain{
+      grid-column: 1/4;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
   }
+  
   
