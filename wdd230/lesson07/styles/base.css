@@ -1,0 +1,43 @@
+body {
+	font-family: "EB Garamond", Arial, serif;
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid rgb(0, 0, 0);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	font-size: .85rem;
+}
+
+tr:first-child th, .highlight {
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid black;
+}
+
+th{
+    background-color: black;
+}
+.label {
+	background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+	font-size: larger;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-color: rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,80 @@
+:root {
+    --label-color: #9c2c13;
+    --input-color: #555;
+    --border-color: #445ba9;
+    --border-radius: 10px;
+}
+
+form {
+    padding: 1rem;
+    background: white;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column; /* Change the layout to vertical */
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: 0.5rem 2%;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+form label.top input,
+form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 0.75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.slider {
+    display: block;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 0.75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form input.submitBtn {
+    display: block;
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem 0 1rem 0; /* Adjust margin to separate vertically */
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
