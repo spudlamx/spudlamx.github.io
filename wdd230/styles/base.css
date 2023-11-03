@@ -150,7 +150,8 @@ footer {
 }
 
 iframe{
-  width:600;
-  height:450;
+  padding: 1rem;
+  width:96%;
+  height:450px;
   border: 0;
 }
