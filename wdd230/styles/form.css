@@ -1,14 +1,8 @@
-:root {
-    --label-color: #9c2c13;
-    --input-color: #555;
-    --border-color: #445ba9;
-    --border-radius: 10px;
-}
 
 form {
     padding: 1rem;
     background: white;
-    border-radius: var(--border-radius);
+    border-radius: 10px;
     display: flex;
     flex-direction: column; /* Change the layout to vertical */
 }

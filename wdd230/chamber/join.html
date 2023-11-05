@@ -1,12 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    join page
-</body>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="I.F. Chamber OF Commerce" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:image" content="images/idaho-falls.webp" />
+    <meta
+      property="og:url"
+      content="https://spudlamx.github.io/wdd230/chamber/"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idaho Falls Chamber of Commerce</title>
+    <meta name="author" content="Spencer Lamoreaux" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Outfit"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Cormorant Garamond"
+    />
+    <meta
+      name="description"
+      content="Details about Idaho Falls Chamber of Commerce"
+    />
+  </head>
+  <body>
+    <header>
+      <picture>
+        <source srcset="images/iflogo.jpeg" type="image/webp" />
+        <img src="images/iflogo.jpeg" alt="logo" />
+      </picture>
+      <h1>
+        Idaho Falls <br />
+        Chamber of Commerce
+      </h1>
+      <h3 id="headtext">Spencer Lamoreaux</h3>
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+    </header>
+    <nav>
+      <button id="menu"></button>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+    <main>
+        <div id="joinInfo">
+
+            <form id="joinForm" method="get" action="thankyou.html">
+                <fieldset>
+
+                    <legend>Join Chamber</legend>
+                    <label class="top" for="firstName">First Name:
+                        <input type="text" id="firstName" name="firstName" required>
+                    </label>
+                    
+                    <label class="top" for="lastName">Last Name:
+                        <input type="text" id="lastName" name="lastName" required>
+                    </label>
+                    
+                    <label class="top" for="title">Title or Position:
+                        <input type="text" id="title" name="title" pattern="[a-zA-Z -]{7,}" title="Please use only letters, hyphens, and spaces (minimum 7 characters).">
+                    </label>
+                    
+                    <label class="top" for="email">Email Address:
+                        <input type="email" id="email" name="email" required placeholder="example@example.com">
+                    </label>
+                    
+                    <label class="top" for="mobile">Mobile Phone Number:
+                        <input type="tel" id="mobile" name="mobile" required>
+                    </label>
+                    
+                    <label class="top" for="organizationName">Business/Organization's Name:
+                        <input type="text" id="organizationName" name="organizationName" required>
+                    </label>
+                    
+                    <fieldset>
+                        <legend>Membership Level:</legend>
+                        <label class="sbs" for="membershipLevel-NP">
+                            <input type="radio" id="membershipLevel-NP" name="membershipLevel" value="NP" required>
+                            NP Membership (Free)
+                        </label><br>
+                        
+                        <label class="sbs" for="membershipLevel-Bronze">
+                            <input type="radio" id="membershipLevel-Bronze" name="membershipLevel" value="Bronze" required>
+                            Bronze Membership
+                        </label><br>
+                        
+                        <label class="sbs" for="membershipLevel-Silver">
+                            <input type="radio" id="membershipLevel-Silver" name="membershipLevel" value="Silver" required>
+                            Silver Membership
+                        </label><br>
+                        
+                        <label class="sbs" for="membershipLevel-Gold">
+                            <input type="radio" id="membershipLevel-Gold" name="membershipLevel" value="Gold" required>
+                            Gold Membership
+                        </label>
+                    </fieldset>
+                    
+                    <label class="top" for="description">Business/Organization's Description:
+                        <textarea id="description" name="description"></textarea>
+                    </label>
+                    
+                    <input type="hidden" id="timestamp" name="timestamp" value="2023-11-03 12:00:00">
+                    
+                    <input class="submitBtn" type="submit" value="Join">
+                </fieldset>
+                </form>
+                
+            <div id="membershipBenefits">
+                <h2>Membership Benefits</h2>
+                <p><strong>NP Membership:</strong> Ideal for non-profit organizations with no membership fee.</p>
+                <p><strong>Bronze Membership:</strong> Benefits include special events and limited advertising opportunities.</p>
+                <p><strong>Silver Membership:</strong> Enhanced benefits, including training and event discounts.</p>
+                <p><strong>Gold Membership:</strong> Premium benefits, including spotlight positions on the homepage and more.</p>
+            </div>
+        </>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span><br />
+        Spencer Lamoreaux <br />
+        (208) 521-3988 <br />
+        United States of America
+      </p>
+      <p>
+        This webpage is a project for Brigham Young University-Idaho course WDD
+        230
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+  </body>
 </html>
