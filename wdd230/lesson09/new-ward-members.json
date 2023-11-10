@@ -1,0 +1,18 @@
+{
+    "familyName": "Lamoreaux",
+    "dateMoved": "03/12/2023",
+    "numFamily": 2,
+    "visitedByBishop": true,
+    "individuals": [
+        {
+            "name": "Spencer",
+            "gender": "Male",
+            "birthdate": "11/24/2000"
+        },
+        {
+            "name": "Camille",
+            "gender": "Female",
+            "birthdate": "05/03/2000"
+        }
+    ]
+}
