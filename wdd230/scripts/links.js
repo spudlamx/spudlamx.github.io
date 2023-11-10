@@ -1,5 +1,5 @@
 const baseURL = "https://spudlamx.github.io/wdd230/";
-const linksURL = "/Users/spencerlamoreaux/Documents/BYU-I/2023 Fall/Web design/wdd230/wdd230/data/links.json";
+const linksURL = "https://spudlamx.github.io/wdd230/data/links.json";
 
 async function getLinks() {
     const response = await fetch(linksURL);
