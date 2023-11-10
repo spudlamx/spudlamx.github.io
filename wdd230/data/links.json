@@ -92,6 +92,10 @@
           {
             "url": "lesson09/new-ward-members.json",
             "title": "Member JSON"
+          },
+          {
+            "url": "lesson09/prophets.html",
+            "title": "Prophets"
           }
         ]
       },
