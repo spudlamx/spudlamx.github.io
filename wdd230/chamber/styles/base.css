@@ -361,3 +361,51 @@ form label.top input:required {
 form label.top input:required:valid {
   border: green solid 2px;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+.grid section{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .grid section p a{
+    color: rgb(206, 210, 255);
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+  }
+  
+  .list section > * {
+    margin: 0 1rem;
+  }
+  
+  .list section img {
+    display: none; /* smaller viewports only */
+  }
+  
+  .list section h3 {
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
+  }
+  .list section p a{
+    color: rgb(206, 210, 255);
+  }
+  
+  .list section:nth-child(even) {
+    background-color: #252525;
+  }

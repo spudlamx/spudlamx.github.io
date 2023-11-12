@@ -1,0 +1,61 @@
+{
+    "members": [
+      {
+        "name": "Company A",
+        "address": "123 Main Street, Cityville",
+        "phone": "123-456-7890",
+        "website": "http://www.companyA.com",
+        "image": "companyA.png",
+        "membership_level": "Gold"
+      },
+      {
+        "name": "Company B",
+        "address": "456 Oak Avenue, Townsville",
+        "phone": "987-654-3210",
+        "website": "http://www.companyB.com",
+        "image": "companyB.png",
+        "membership_level": "Silver"
+      },
+      {
+        "name": "Company C",
+        "address": "789 Pine Lane, Villagetown",
+        "phone": "555-123-4567",
+        "website": "http://www.companyC.com",
+        "image": "companyC.png",
+        "membership_level": "Bronze"
+      },
+      {
+        "name": "Company D",
+        "address": "321 Cedar Street, Hamletville",
+        "phone": "444-567-8901",
+        "website": "http://www.companyD.com",
+        "image": "companyD.png",
+        "membership_level": "Non-Profit"
+      },
+      {
+        "name": "Company E",
+        "address": "567 Birch Road, Villageton",
+        "phone": "777-888-9999",
+        "website": "http://www.companyE.com",
+        "image": "companyE.png",
+        "membership_level": "Gold"
+      },
+      {
+        "name": "Company F",
+        "address": "890 Maple Lane, Townville",
+        "phone": "222-333-4444",
+        "website": "http://www.companyF.com",
+        "image": "companyF.png",
+        "membership_level": "Silver"
+      },
+      {
+        "name": "Company G",
+        "address": "234 Oak Street, Citytown",
+        "phone": "666-999-1111",
+        "website": "http://www.companyG.com",
+        "image": "companyG.png",
+        "membership_level": "Bronze"
+      }
+    ]
+  }
+  

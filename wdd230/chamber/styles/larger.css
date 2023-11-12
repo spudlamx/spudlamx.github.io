@@ -45,5 +45,12 @@
     #membershipInfo{
       grid-column: 2/3;
     }
+
+    #directoryMain{
+      grid-column: 1/4;
+    }
+    #members {
+      grid-column: 1/3;
+    }
   }
   
