@@ -35,7 +35,7 @@ const displayMembers = (members) => {
     phoneParagraph.textContent = `Phone: ${member.phone}`;
 
     // Build the paragraph element for website
-    websiteParagraph.innerHTML = `Website: <a href="${member.website}" target="_blank">${member.website}</a>`;
+    websiteParagraph.innerHTML = `<a href="${member.website}" target="_blank">Visit</a>`;
 
     // Build the image element by setting all the relevant attributes
     imageElement.setAttribute('src', `images/${member.image}`);
