@@ -389,8 +389,9 @@ form label.top input:required:valid {
   
   .list section {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr repeat(4, 1fr);
     margin: 0;
+    text-align: left;
     padding: 0.25rem;
   }
   
