@@ -1,59 +1,59 @@
 {
     "members": [
       {
-        "name": "Company A",
-        "address": "123 Main Street, Cityville",
-        "phone": "123-456-7890",
-        "website": "http://www.companyA.com",
-        "image": "companyA.png",
+        "name": "Idaho Falls Country Club",
+        "address": "11611 S. Country Club Drive  Idaho Falls  ID  83404-7848",
+        "phone": "(208) 523-5757",
+        "website": "https://ifcountryclub.com/",
+        "image": "IFCC.webp",
         "membership_level": "Gold"
       },
       {
-        "name": "Company B",
-        "address": "456 Oak Avenue, Townsville",
-        "phone": "987-654-3210",
-        "website": "http://www.companyB.com",
-        "image": "companyB.png",
+        "name": "Idaho Falls Chiropractic Clinic, PLLC",
+        "address": "1880 E. 17th Street  Idaho Falls  ID  83404",
+        "phone": "(208) 523-0121",
+        "website": "https://www.idahofallschiropracticclinic.com/",
+        "image": "IFchiro.webp",
         "membership_level": "Silver"
       },
       {
-        "name": "Company C",
-        "address": "789 Pine Lane, Villagetown",
-        "phone": "555-123-4567",
-        "website": "http://www.companyC.com",
-        "image": "companyC.png",
+        "name": "Idaho Falls Downtown Development Corp.",
+        "address": "381 Shoup Avenue, Ste 207  Idaho Falls  ID  83402",
+        "phone": "(208) 535-0399",
+        "website": "https://downtownidahofalls.com/",
+        "image": "IFdev.webp",
         "membership_level": "Bronze"
       },
       {
-        "name": "Company D",
-        "address": "321 Cedar Street, Hamletville",
-        "phone": "444-567-8901",
-        "website": "http://www.companyD.com",
-        "image": "companyD.png",
+        "name": "Idaho Community Foundation",
+        "address": "490 Memorial Drive  Idaho Falls  ID  83402",
+        "phone": "(208) 529-3933",
+        "website": "https://www.idahocf.org/home",
+        "image": "ICF.webp",
         "membership_level": "Non-Profit"
       },
       {
-        "name": "Company E",
-        "address": "567 Birch Road, Villageton",
-        "phone": "777-888-9999",
-        "website": "http://www.companyE.com",
-        "image": "companyE.png",
+        "name": "Idaho Disaster Pros",
+        "address": "2484 West Omni Dr  Idaho Falls   ID  83402",
+        "phone": "(208) 563-5663",
+        "website": "https://idahodisasterpros.com/",
+        "image": "IDP.webp",
         "membership_level": "Gold"
       },
       {
-        "name": "Company F",
-        "address": "890 Maple Lane, Townville",
-        "phone": "222-333-4444",
-        "website": "http://www.companyF.com",
-        "image": "companyF.png",
+        "name": "Idaho Falls Pediatrics",
+        "address": "3067 Eagle Drive  Ammon  ID  83406",
+        "phone": "(208) 522-4600",
+        "website": "https://www.ifpeds.com/",
+        "image": "IFped.webp",
         "membership_level": "Silver"
       },
       {
-        "name": "Company G",
-        "address": "234 Oak Street, Citytown",
-        "phone": "666-999-1111",
-        "website": "http://www.companyG.com",
-        "image": "companyG.png",
+        "name": "Idaho Housing and Finance Association",
+        "address": "1235 Jones Street  Idaho Falls  ID  83401",
+        "phone": "(208) 522-6002",
+        "website": "https://www.idahohousing.com/",
+        "image": "IHF.webp",
         "membership_level": "Bronze"
       }
     ]

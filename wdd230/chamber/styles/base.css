@@ -377,6 +377,10 @@ form label.top input:required:valid {
   .grid section p a{
     color: rgb(206, 210, 255);
   }
+  .grid section img{
+    background-color: white;
+  }
+
 
   .list {
     display: flex;
