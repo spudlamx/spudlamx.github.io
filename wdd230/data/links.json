@@ -1,108 +1,112 @@
 {
-    "lessons": [
-      {
-        "lesson": "01",
-        "links": [
-          {
-            "url": "lesson01/aa-course-homepage-01.html",
-            "title": "Home Page"
-          },
-          {
-            "url": "lesson01/media-query.html",
-            "title": "Media Query"
-          }
-        ]
-      },
-      {
-        "lesson": "02",
-        "links": [
-          {
-            "url": "lesson2/design.html",
-            "title": "Design Principles"
-          },
-          {
-            "url": "lesson2/design-principles.html",
-            "title": "Design Document"
-          }
-        ]
-      },
-      {
-        "lesson": "03",
-        "links": [
-          {
-            "url": "images/combinatorquiz.webp",
-            "title": "Combinator Quiz"
-          },
-          {
-            "url": "https://codepen.io/Spencer-Lamoreaux/pen/YzdvLMg",
-            "title": "CodePen"
-          },
-          {
-            "url": "https://codepen.io/Spencer-Lamoreaux/pen/YzdvvPb",
-            "title": "Menu"
-          }
-        ]
-      },
-      {
-        "lesson": "04",
-        "links": [
-          {
-            "url": "https://codepen.io/Spencer-Lamoreaux/pen/VwqVjPO",
-            "title": "CodePen"
-          }
-        ]
-      },
-      {
-        "lesson": "05",
-        "links": [
-          {
-            "url": "lesson05/bom.html",
-            "title": "BoM app"
-          },
-          {
-            "url": "lesson03/images/landscape.webp",
-            "title": "WebP"
-          }
-        ]
-      },
-      {
-        "lesson": "06",
-        "links": []
-      },
-      {
-        "lesson": "07",
-        "links": [
-          {
-            "url": "lesson07/tablebuild.html",
-            "title": "Table"
-          },
-          {
-            "url": "lesson07/form-start/index.html",
-            "title": "Form"
-          }
-        ]
-      },
-      {
-        "lesson": "08",
-        "links": []
-      },
-      {
-        "lesson": "09",
-        "links": [
-          {
-            "url": "lesson09/new-ward-members.json",
-            "title": "Member JSON"
-          },
-          {
-            "url": "lesson09/prophets.html",
-            "title": "Prophets"
-          }
-        ]
-      },
-      {
-        "lesson": "10",
-        "links": []
-      }
-    ]
-  }
-  
+  "lessons": [
+    {
+      "lesson": "01",
+      "links": [
+        {
+          "url": "lesson01/aa-course-homepage-01.html",
+          "title": "Home Page"
+        },
+        {
+          "url": "lesson01/media-query.html",
+          "title": "Media Query"
+        }
+      ]
+    },
+    {
+      "lesson": "02",
+      "links": [
+        {
+          "url": "lesson2/design.html",
+          "title": "Design Principles"
+        },
+        {
+          "url": "lesson2/design-principles.html",
+          "title": "Design Document"
+        }
+      ]
+    },
+    {
+      "lesson": "03",
+      "links": [
+        {
+          "url": "images/combinatorquiz.webp",
+          "title": "Combinator Quiz"
+        },
+        {
+          "url": "https://codepen.io/Spencer-Lamoreaux/pen/YzdvLMg",
+          "title": "CodePen"
+        },
+        {
+          "url": "https://codepen.io/Spencer-Lamoreaux/pen/YzdvvPb",
+          "title": "Menu"
+        }
+      ]
+    },
+    {
+      "lesson": "04",
+      "links": [
+        {
+          "url": "https://codepen.io/Spencer-Lamoreaux/pen/VwqVjPO",
+          "title": "CodePen"
+        }
+      ]
+    },
+    {
+      "lesson": "05",
+      "links": [
+        {
+          "url": "lesson05/bom.html",
+          "title": "BoM app"
+        },
+        {
+          "url": "lesson03/images/landscape.webp",
+          "title": "WebP"
+        }
+      ]
+    },
+    {
+      "lesson": "06",
+      "links": []
+    },
+    {
+      "lesson": "07",
+      "links": [
+        {
+          "url": "lesson07/tablebuild.html",
+          "title": "Table"
+        },
+        {
+          "url": "lesson07/form-start/index.html",
+          "title": "Form"
+        }
+      ]
+    },
+    {
+      "lesson": "08",
+      "links": []
+    },
+    {
+      "lesson": "09",
+      "links": [
+        {
+          "url": "lesson09/new-ward-members.json",
+          "title": "Member JSON"
+        },
+        {
+          "url": "lesson09/prophets.html",
+          "title": "Prophets"
+        }
+      ]
+    },
+    {
+      "lesson": "10",
+      "links": [
+        {
+          "url": "lesson10/weather.html",
+          "title": "Weather API"
+        }
+      ]
+    }
+  ]
+}
