@@ -102,3 +102,23 @@ var windChillValue = calculateWindChill(temperatureInput, windSpeedInput);
 // Display the wind chill value on your web page
 document.getElementById("windchill").textContent =
   "Wind Chill: " + windChillValue + " °F";
+
+
+
+function shouldDisplayBanner() {
+  const today = new Date();
+  const dayOfWeek = today.getDay(); // 0 (Sunday) to 6 (Saturday)
+  return dayOfWeek >= 1 && dayOfWeek <= 3; // Display on Monday, Tuesday, and Wednesday
+}
+
+function closeBanner() {
+  const banner = document.getElementById('banner');
+  banner.style.display = 'none';
+}
+
+window.onload = function() {
+  if (shouldDisplayBanner()) {
+    const banner = document.getElementById('banner');
+    banner.style.display = 'block';
+    }
+  };

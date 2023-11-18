@@ -11,7 +11,7 @@ body {
 
 /* Image styles */
 img {
-  padding: 1rem;
+  margin: 1rem;
   max-width: 100%;
   height: auto;
 }
@@ -120,11 +120,37 @@ main {
 .overlay p::before {
   content: "Small";
 }
+.banner {
+  display: none;
+  position: sticky;
+  top: 0; /* To make it stick at the top */
+  width: 100%;
+  background-color: #d1e6f8;
+  padding: 5px;
+  text-align: center;
+  z-index: 1000; /* To ensure it stays above other elements */
+  transition: top 0.3s ease; /* Smooth transition */
+}
+.banner button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+}
+.banner button:hover{
+  transform: scale(1.2);
+  font-size: 20px;
+}
 
 .hero {
   position: relative;
   display: inline-block;
   max-width: 100%;
+}
+.hero picture source,
+.hero picture img{
+  width: 100%;
 }
 .overlay {
   position: absolute;
@@ -146,6 +172,7 @@ section {
   background-color: #404040;
   color: white;
   margin: 1rem;
+  width: 100%;
 }
 
 /* Ads styles */
@@ -230,12 +257,12 @@ a:link {
   text-decoration: none;
   color: rgb(255, 244, 163);
 }
+.navigation a:visited:hover {
+  color: #00539C;
+}
 a:hover {
   background: white;
   color: #00539C;
-}
-a:active {
-  text-decoration: underline;
 }
 
 #sidebar div{
@@ -374,20 +401,20 @@ form label.top input:required:valid {
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  .grid section p a{
+.grid section p a{
     color: rgb(206, 210, 255);
   }
-  .grid section img{
+.grid section img{
     background-color: white;
   }
 
 
-  .list {
+.list {
     display: flex;
     flex-direction: column;
   }
   
-  .list section {
+.list section {
     display: grid;
     grid-template-columns: 2fr repeat(4, 1fr);
     margin: 0;
@@ -395,22 +422,22 @@ form label.top input:required:valid {
     padding: 0.25rem;
   }
   
-  .list section > * {
+.list section > * {
     margin: 0 1rem;
   }
   
-  .list section img {
+.list section img {
     display: none; /* smaller viewports only */
   }
   
-  .list section h3 {
+.list section h3 {
     font-size: 1rem;
     font-family: Roboto, Helvetica, sans-serif;
   }
-  .list section p a{
+.list section p a{
     color: rgb(206, 210, 255);
   }
   
-  .list section:nth-child(even) {
+.list section:nth-child(even) {
     background-color: #252525;
   }
