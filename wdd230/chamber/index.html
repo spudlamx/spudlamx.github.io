@@ -86,10 +86,16 @@
       <section><h2>Call to action</h2></section>
       <section class="events"><h2>Current events</h2></section>
       <section class="weather">
-        <h2>Weather</h2>
-        <p>Temperature: <span id="temperature" data-value="42"></span> °F</p>
-        <p>Wind Speed: <span id="windspeed" data-value="8.5"></span> mph</p>
-        <p id="windchill">Wind Chill: Calculating...</p>
+        <div>
+          <h2>Current Weather</h2>
+          <p>Temperature: <span id="currentTemp"></span></p>
+          <p>Description: <span id="weatherDesc"></span></p>
+        </div>
+        
+        <div>
+          <h2>Three-Day Forecast</h2>
+          <div id="forecast" class="forecast-container"></div>
+        </div>
       </section>
       <section class="ads">
         <h2>Spotlight ads</h2>
@@ -121,5 +127,6 @@
       <p id="lastModified"></p>
     </footer>
     <script src="scripts/chamber.js"></script>
+    <script src="scripts/weather.js"></script>
   </body>
 </html>

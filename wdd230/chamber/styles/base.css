@@ -176,14 +176,29 @@ section {
 }
 
 /* Ads styles */
+div{
+  margin: 1rem;
+}
+.forecast-container {
+  display: flex;
+}
+
+.forecast-item {
+  flex: 1;
+  border-radius: 10px;
+  margin: 5px;
+  color: #00539C;
+  background-color: white;
+}
+.forecast-item h2{
+  text-align: center;
+  background-color: #00539C;
+  color: white;
+}
 .ads {
   display: grid;
   grid-template-columns: auto;
 }
-div{
-  margin: 1rem;
-}
-
 .ads div {
   color: #00539C;
   background-color: white;
