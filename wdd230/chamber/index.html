@@ -69,7 +69,7 @@
             type="image/webp"
           />
           <source
-            media="(min-width: 800x) and (max-width: 768px)"
+            media="(min-width: 800px) and (max-width: 768px)"
             srcset="images/wdd230-orgmedium.webp"
           />
           <source
@@ -86,10 +86,13 @@
       <section><h2>Call to action</h2></section>
       <section class="events"><h2>Current events</h2></section>
       <section class="weather">
-        <div>
-          <h2>Current Weather</h2>
-          <p>Temperature: <span id="currentTemp"></span></p>
-          <p>Description: <span id="weatherDesc"></span></p>
+        <div id="current-weather">
+          <h2>Idaho Falls Weather</h2>
+          <div class="infoPad">
+            <h3>Current Weather</h3>
+            <p>Temp: <span id="currentTemp"></span></p>
+            <p><span id="weatherDesc"></span></p>
+          </div>
         </div>
         
         <div>
@@ -99,15 +102,15 @@
       </section>
       <section class="ads">
         <h2>Spotlight ads</h2>
-        <div>
+        <div class="infoPad">
           <h3>Ad 1</h3>
           <p>Info goes here</p>
         </div>
-        <div>
+        <div class="infoPad">
           <h3>Ad 2</h3>
           <p>Info goes here</p>
         </div>
-        <div>
+        <div class="infoPad">
           <h3>Ad 3</h3>
           <p>Info goes here</p>
         </div>

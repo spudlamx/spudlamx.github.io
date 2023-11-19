@@ -42,8 +42,8 @@ async function getThreeDayForecast() {
         const weatherDesc = forecast.weather[0].description;
   
         const forecastElement = document.createElement('div');
-        forecastElement.classList.add('forecast-item');
-        forecastElement.innerHTML = `<h2>${day}</h2> <p>High: ${temp}°F<br> Low: ${temp_min}°F <br> ${weatherDesc}.</p>`;
+        forecastElement.classList.add('infoPad');
+        forecastElement.innerHTML = `<h3>${day}</h3> <p>High: ${temp}°F<br> Low: ${temp_min}°F <br> ${weatherDesc}.</p>`;
         forecastContainer.appendChild(forecastElement);
       });
     } catch (error) {
