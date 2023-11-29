@@ -1,7 +1,4 @@
 @media screen and (min-width: 800px) and (max-width: 999px) {
-    .overlay p::before {
-      content: "Medium";
-    }
     #discmain{
       display: grid;
       grid-template-columns: 1fr 2fr;

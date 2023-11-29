@@ -11,9 +11,7 @@
       flex-direction: row;
       align-items: center;
     }
-    .overlay p::before {
-      content: "Large";
-    }
+
     .ads {
       display: grid;
       grid-template-rows: auto auto;
