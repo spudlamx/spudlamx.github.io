@@ -14,7 +14,7 @@
 
     .ads {
       display: grid;
-      grid-template-rows: auto auto;
+      grid-template-columns: repeat(3, 1fr);
     }
     .ads h2 {
       grid-column: 1/4;

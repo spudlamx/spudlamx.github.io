@@ -6,7 +6,7 @@
 /* Layout styles */
 body {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: .5fr 3fr .5fr;
 }
 
 /* Image styles */
@@ -171,7 +171,7 @@ section {
   background-color: #404040;
   color: white;
   margin: 1rem;
-  width: 100%;
+  max-width: 100%;
 }
 
 /* Ads styles */
@@ -188,8 +188,12 @@ div{
 }
 .ads {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
 }
+.ads img{
+  max-width: fit-content;
+}
+
 .infoPad {
   flex: 2;
   padding-top: 5px;
@@ -202,6 +206,7 @@ div{
 .infoPad h1, 
 .infoPad h2, 
 .infoPad h3 {
+  padding: 10px;
   text-align: center;
   background-color: #00539C;
   margin-top: 20px; /* Add margin top to create space */
