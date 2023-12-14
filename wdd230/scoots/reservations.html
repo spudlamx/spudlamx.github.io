@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Scoots Rentals">
+    <meta property="og:type" content="Website">
+    <meta property="og:image" content="images/scoots.webp">
+    <meta
+      property="og:url"
+      content="https://spudlamx.github.io/wdd230/scoots/"
+  >
+  <meta
+      name="description"
+      content="Scoots Rental Reservations"
+  >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Outfit"
+  >
+    <title>Scoots Reservations</title>
+    <meta name="author" content="Spencer Lamoreaux">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/smaller.css">
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="images/scooters.webp" alt="logo" loading="lazy">
+      <h1>Scoots Rentals</h1>
+      <h3>Reservations</h3>
+    </header>
+    <nav>
+      <button id="menu"></button>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main id="reserveMain">
+      <section>
+        <h2>Vehicle Rental Form</h2>
+
+        <form method="get" action="thanks.html">
+          <label for="rental_type">Rental Type:</label><br>
+          <select id="rental_type" name="rental_type" required>
+            <option value="">Select rental type</option>
+            <optgroup label="Honda Motor Scooters">
+              <option value="Honda Metropolitan (49cc) - 1 person">
+                Honda Metropolitan (49cc) - 1 person
+              </option>
+              <option value="Honda Dio (110cc) - 2 person">
+                Honda Dio (110cc) - 2 person
+              </option>
+              <option value="Honda PCX150 (149cc) - 2 person">
+                Honda PCX150 (149cc) - 2 person
+              </option>
+            </optgroup>
+            <optgroup label="Side-by-Side ATVs">
+              <option value="Honda Pioneer 1000 - 4 person">
+                Honda Pioneer 1000 - 4 person
+              </option>
+            </optgroup>
+            <optgroup label="Jeeps">
+              <option value="Jeep Wrangler - 4 door manuel with A/C - 5 person">
+                Jeep Wrangler - 4 door manual with A/C - 5 person
+              </option>
+              <option
+                value="Jeep Wrangler - 2 door - open air - manual - 4 person"
+              >
+                Jeep Wrangler - 2 door - open air - manual - 4 person
+              </option>
+            </optgroup>
+          </select>
+
+          <label for="rental_date"
+            >Rental Date:
+            <input
+              type="date"
+              id="rental_date"
+              name="rental_date"
+              required
+              oninput="checkDates()"
+          >
+          </label>
+
+          <label for="return_date"
+            >Return Date:
+            <input
+              type="date"
+              id="return_date"
+              name="return_date"
+              required
+              oninput="checkDates()"
+          >
+          </label>
+
+          <label for="num_of_vehicles"
+            >Number of Vehicles:
+            <input
+              type="number"
+              id="num_of_vehicles"
+              name="num_of_vehicles"
+              min="1"
+              required
+          >
+          </label>
+
+          <label for="phone"
+            >Phone Number:
+            <input type="tel" id="phone" name="phone" required>
+          </label>
+
+          <label for="name"
+            >Name:
+
+            <input type="text" id="name" name="name" required>
+          </label>
+
+          <label for="email"
+            >Email:
+
+            <input type="email" id="email" name="email" required>
+          </label>
+
+          <label for="home_location"
+            >Home State or Country:
+
+            <input
+              type="text"
+              id="home_location"
+              name="home_location"
+              required
+          >
+          </label>
+
+          <label for="cruise_line"
+            >Cruise Line (if applicable):
+
+            <input type="text" id="cruise_line" name="cruise_line">
+          </label>
+
+          <label for="special_accommodations"
+            >Special Accommodations/Comments:
+            <textarea
+              id="special_accommodations"
+              name="special_accommodations"
+              rows="4"
+              cols="50"
+            ></textarea>
+          </label>
+
+          <label for="drop_off_request"
+            >Drop-off Request (if any):
+            <input type="text" id="drop_off_request" name="drop_off_request">
+          </label>
+
+          <input type="submit" value="Reserve Vehicle">
+        </form>
+      </section>
+      <section>
+        <div class="info">
+          <h2>Rental Requirements</h2>
+          <ol>
+            <li> A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid drivers license is required in hand at the time of rental.</li>
+            <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+            <li>Fuel charge is not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is included.</li>
+            <li>Damage insurance is available for purchase.</li>
+            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+            <li>Rentals may be returned to either physical location.</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p id="contact">
+        contact <br>
+        +1(234)567-8910<br>testemail@gmail.com
+      </p>
+      <a class="socialLink" href="https://www.facebook.com/" target="_blank">
+        <img
+          class="social-icon"
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png"
+          alt="Facebook"
+          loading="lazy"
+      >
+      </a>
+      <a class="socialLink" href="https://www.twitter.com/" target="_blank">
+        <img
+          class="social-icon"
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg"
+          alt="Twitter"
+          loading="lazy"
+      >
+      </a>
+      <a class="socialLink" href="https://www.instagram.com/" target="_blank">
+        <img
+          class="social-icon"
+          src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+          alt="Instagram"
+          loading="lazy"
+      >
+      </a>
+    </footer>
+    <script src="scripts/reservations.js"></script>
+    <script src="scripts/navView.js"></script>
+  </body>
+</html>
